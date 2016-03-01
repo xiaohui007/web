@@ -1,0 +1,10 @@
+/* ie.css */
+body {text-align:left;}
+.wrap {text-align:left;}
+.clearfix{zoom:1;}
+
+/*-- ie6 only --*/
+*html .class {}
+
+/*-- ie7 only --*/
+*+html .class {}
