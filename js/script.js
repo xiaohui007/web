@@ -34,7 +34,61 @@ $(document).ready(function() {
       async: true,
       success: function(data){
         console.log(_obj);
-        _obj.append(data);
+        _obj.empty().append(data);
+        _this.addClass('cur').siblings().removeClass('cur');
+        // _loading.remove();
+        setTimeout(function(){ _loading.remove(); }, 500);
+      },
+      error: function () {
+        alert('加载错误,请重新刷新页面');
+      },
+      beforeSend: function () {
+        _loading.appendTo(_obj);
+        // alert('正在加载...');
+      }
+    });
+  });
+  $('.ajax-menu2').on('click', 'a:not(".cur")', function(event) {
+    event.preventDefault();
+    var _this = $(this);
+    var _url = _this.data('ajax');
+    var _obj = _this.parent().parent().next();
+    var _loading = $('<div class="loading"><img src="images/loading.gif"></div>');
+    $.ajax({
+      type: "POST",
+      url: "ajax/"+_url+".html",
+      dataType: 'html',
+      async: true,
+      success: function(data){
+        console.log(233);
+        _obj.empty().append(data);
+        _this.addClass('cur').siblings().removeClass('cur');
+        // _loading.remove();
+        setTimeout(function(){ _loading.remove(); }, 500);
+      },
+      error: function () {
+        alert('加载错误,请重新刷新页面');
+      },
+      beforeSend: function () {
+        _loading.appendTo(_obj);
+        // alert('正在加载...');
+      }
+    });
+  });
+  $('.ajax-menu3').on('click', 'a:not(".cur")', function(event) {
+    event.preventDefault();
+    var _this = $(this);
+    var _url = _this.data('ajax');
+    var _obj = $('.xq-header .list-wrapper .wrapper')
+    var _loading = $('<div class="loading"><img src="images/loading.gif"></div>');
+    $.ajax({
+      type: "POST",
+      url: "ajax/"+_url+".html",
+      dataType: 'html',
+      async: true,
+      success: function(data){
+        console.log(_obj);
+        _obj.empty().append(data);
         _this.addClass('cur').siblings().removeClass('cur');
         // _loading.remove();
         setTimeout(function(){ _loading.remove(); }, 500);
@@ -49,36 +103,92 @@ $(document).ready(function() {
     });
   });
 
-  $('.ajax-menu2').on('click', 'a:not(".cur")', function(event) {
-    event.preventDefault();
+  var timer,timer2,timer3;
+  $('.car-pop').mouseenter(function(event) {
+    clearTimeout(timer2);
+    clearTimeout(timer3);
+    var _obj = $('.car-list');
+    timer = setTimeout(function(){
+      $(this).addClass('cur');
+      _obj.show();
+      _obj.children('.bg').fadeIn(300);
+      setTimeout(function(){
+        _obj.children('.list-wrapper').show().css('height', '0').stop().animate({ height: '430px' }, 300);
+      }, 300);
+    }, 300);
+  }).mouseleave(function(event) {
+    var _obj = $('.car-list');
     var _this = $(this);
-    var _url = _this.data('ajax');
-    var _obj = _this.parent().parent().next();
-    var _loading = $('<div class="loading"><img src="images/loading.gif"></div>');
-    $.ajax({
-      type: "POST",
-      url: "ajax/"+_url+".html",
-      dataType: 'html',
-      async: true,
-      success: function(data){
-        console.log(233);
-        _obj.append(data);
-        _this.addClass('cur').siblings().removeClass('cur');
-        // _loading.remove();
-        // setTimeout(function(){ _loading.remove(); }, 500);
-      },
-      error: function () {
-        alert('加载错误,请重新刷新页面');
-      },
-      beforeSend: function () {
-        _loading.appendTo(_obj);
-        // alert('正在加载...');
-      }
-    });
+    clearTimeout(timer);
+    timer2 = setTimeout(function(){
+      _this.removeClass('cur');
+      _obj.children('.list-wrapper').fadeOut(300);
+      _obj.children('.bg').fadeOut(300);
+      setTimeout(function(){ _obj.hide(); }, 300);
+    }, 300);
+  });
+  $('.xq-header .list-wrapper').mouseenter(function(event) {
+    clearTimeout(timer2);
+    clearTimeout(timer3);
+    var _obj = $('.car-list');
+    $('.car-pop').addClass('cur');
+    _obj.show();
+    _obj.children('.bg').fadeIn(300);
+    setTimeout(function(){
+      _obj.children('.list-wrapper').show();
+    }, 300);
+  }).mouseleave(function(event) {
+    var _obj = $('.car-list');
+    var _this = $('.car-pop');
+    timer3 = setTimeout(function(){
+      _this.removeClass('cur');
+      _obj.children('.list-wrapper').fadeOut(300);
+      _obj.children('.bg').fadeOut(300);
+      setTimeout(function(){ _obj.hide(); }, 300);
+    }, 300);
+  });
+  $('.car-hover').on('mouseenter', '.block .fl a', function() {
+    var _obj = $(this).data('show');
+    $('.block .fl a').removeClass('hover');
+    $(this).addClass('hover');
+    $('.block .fr').hide();
+    $(this).parents('.block').children('.'+_obj).fadeIn(300);
   });
 
 });
 
 $(window).load(function(){
   // $('#loading').fadeOut();
+});
+
+$(window).resize(function(event) {
+  var _scrollT = $('.index-banner').offset().top;
+  var _scrollW = $(window).scrollTop();
+  if ( _scrollW > _scrollT ) {
+    $('.scrollbar').fadeIn(300);
+  }else{
+    $('.scrollbar').fadeOut(300);
+  };
+});
+$(function() {
+  var _scrollT = $('.index-banner').offset().top;
+  var _scrollW = $(window).scrollTop();
+  if ( _scrollW > _scrollT ) {
+    $('.scrollbar').fadeIn(300);
+  }else{
+    $('.scrollbar').fadeOut(300);
+  };
+  $(window).scroll(function(){
+    $('.car-list').fadeOut(300);
+    var _scrollW = $(window).scrollTop();
+    if ( _scrollW > _scrollT ) {
+      $('.scrollbar').fadeIn(300);
+    }else{
+      $('.scrollbar').fadeOut(300);
+    };
+  });
+  $('.scrollbar').on('click', '.a7', function(event) {
+    event.preventDefault();
+    $('html,body').animate({ scrollTop: 0 }, 300);
+  });
 });

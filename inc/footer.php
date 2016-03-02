@@ -1,3 +1,15 @@
+<!-- start scrollbar -->
+<div class="scrollbar">
+  <a href="#" class="a1" title="在线客服"><span class="v-h">在线客服</span></a>
+  <a href="#" class="a2" title="在线客服"><span class="v-h">在线客服</span></a>
+  <a href="#" class="a3" title="在线客服"><span class="v-h">在线客服</span></a>
+  <a href="#" class="a4" title="在线客服"><span class="v-h">在线客服</span></a>
+  <a href="#" class="a5" title="在线客服"><span class="v-h">在线客服</span></a>
+  <a href="#" class="a6" title="在线客服"><span class="v-h">在线客服</span></a>
+  <a href="#" class="a7" title="回到顶部"><span class="v-h">回到顶部</span></a>
+</div>
+<!-- end scrollbar -->
+
 <!-- start footer -->
 <div class="xq-footer">
   <div class="w1200">
