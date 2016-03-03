@@ -1,4 +1,4 @@
-<?php include 'inc/header.php'; ?>
+<?php $page_title="首页"; include 'inc/header.php'; ?>
 
 <!-- start index_content -->
 <div class="index-banner">

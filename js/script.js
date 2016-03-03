@@ -149,12 +149,43 @@ $(document).ready(function() {
   });
   $('.car-hover').on('mouseenter', '.block .fl a', function() {
     var _obj = $(this).data('show');
-    $('.block .fl a').removeClass('hover');
+    $('.car-hover .block .fl a').removeClass('hover');
     $(this).addClass('hover');
-    $('.block .fr').hide();
+    $('.car-hover .block .fr').hide();
     $(this).parents('.block').children('.'+_obj).fadeIn(300);
   });
 
+  var timer4,timer5,timer6;
+  $('.fin-pop').mouseenter(function(event) {
+    clearTimeout(timer5);
+    clearTimeout(timer6);
+    var _obj = $('.xq-header .financial');
+    timer4 = setTimeout(function(){
+      $(this).addClass('cur');
+      _obj.show().css('height', '0').stop().animate({ height: '345px' }, 300);
+    }, 300);
+  }).mouseleave(function(event) {
+    var _obj = $('.xq-header .financial');
+    var _this = $(this);
+    clearTimeout(timer4);
+    timer5 = setTimeout(function(){
+      _this.removeClass('cur');
+      _obj.fadeOut(300);
+    }, 300);
+  });
+  $('.xq-header .financial').mouseenter(function(event) {
+    clearTimeout(timer5);
+    clearTimeout(timer6);
+    var _obj = $(this);
+    $('.fin-pop').addClass('cur');
+    _obj.show();
+  }).mouseleave(function(event) {
+    var _obj = $(this);
+    timer6 = setTimeout(function(){
+      $('.fin-pop').removeClass('cur');
+      _obj.fadeOut(300);
+    }, 300);
+  });
 });
 
 $(window).load(function(){
@@ -162,7 +193,8 @@ $(window).load(function(){
 });
 
 $(window).resize(function(event) {
-  var _scrollT = $('.index-banner').offset().top;
+  if ($('.index-banner').length==0) { var _scrollT = $('.page-banner').offset().top; };
+  if ($('.index-banner').length!=0) { var _scrollT = $('.index-banner').offset().top; };
   var _scrollW = $(window).scrollTop();
   if ( _scrollW > _scrollT ) {
     $('.scrollbar').fadeIn(300);
@@ -170,8 +202,10 @@ $(window).resize(function(event) {
     $('.scrollbar').fadeOut(300);
   };
 });
+
 $(function() {
-  var _scrollT = $('.index-banner').offset().top;
+  if ($('.index-banner').length==0) { var _scrollT = $('.page-banner').offset().top; };
+  if ($('.index-banner').length!=0) { var _scrollT = $('.index-banner').offset().top; };
   var _scrollW = $(window).scrollTop();
   if ( _scrollW > _scrollT ) {
     $('.scrollbar').fadeIn(300);

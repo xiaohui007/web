@@ -1,0 +1,36 @@
+/*公用代码*/
+.white {color:#fff}
+.gray {color:#585858}
+.gray2 {color:#5a5657;}
+.blue {color:#0067b2}
+.yellow {color:#fff600;}
+.red {color:#ff0000;}
+
+.tc {text-align:center;}
+
+.f-song {font-family:"宋体",Arial;}
+
+.fb {font-weight:bold;}
+
+.f14 {font-size:14px;}
+.f16 {font-size:16px;}
+.f18 {font-size:18px;}
+.f38 {font-size:38px;}
+
+.ml14 {margin-left:14px;}
+.ml15 {margin-left:15px;}
+.ml30 {margin-left:30px;}
+
+.mr20 {margin-right:20px;}
+
+.mt30 {margin-top:30px}
+
+.mb8 {margin-bottom:8px}
+.mb16 {margin-bottom:16px}
+.mb80 {margin-bottom:80px}
+
+.lh25 {line-height:25px;}
+/*END 公用代码*/
+
+.wrapper {font-family:"微软雅黑","Microsoft YaHei",Arial,"Microsoft JhengHei";}
+.wrapper h3 {font-size:30px; font-weight:normal; color:#0067b2; text-align:center; margin-top:90px; margin-bottom:30px;}

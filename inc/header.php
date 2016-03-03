@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>吉利官网</title>
+<title><?=$page_title?>-吉利官网</title>
 <link href="images/favicon.ico" rel="shortcut icon" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
@@ -55,7 +55,7 @@ DD_belatedPNG.fix('.class1,.class');
         <a href="index.php">首页</a>
         <a href="#" class="car-pop">吉利车型</a>
         <a href="#">云口碑</a>
-        <a href="financial_services-guide.php">金融服务</a>
+        <a href="financial_services-guide.php" class="fin-pop">金融服务</a>
         <a href="#">车主服务</a>
         <a href="#">走进吉利</a>
         <a href="#">吉利热点</a>
@@ -268,8 +268,17 @@ DD_belatedPNG.fix('.class1,.class');
     </div>
   </div>
 
-  <div class="financial">
-    
+  <div class="financial clearfix" style="display: none;">
+    <div class="fl">
+      <a href="#" class="cur"><span>></span> 车贷指南</a>
+      <a href="#"><span>></span> 车贷计算</a>
+      <a href="#"><span>></span> 车贷套餐</a>
+      <a href="#"><span>></span> 车贷申请</a>
+      <a href="#"><span>></span> 常见问题</a>
+    </div>
+    <div class="fr">
+      <img src="images/header-fimg.jpg" alt="">
+    </div>
   </div>
 </div>
 <!-- end header -->

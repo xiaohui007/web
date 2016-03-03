@@ -96,7 +96,7 @@
 .index-com .bottom-bk>div { width: 574px; }
 .index-com .bottom-bk .title { color: #fff; font: 16px/40px "微软雅黑"; padding-left: 40px; background: url(../images/index/com-ico.png) no-repeat left center; height: 40px; border-bottom: 1px solid #98c2e0; }
 .index-com .bottom-bk .list { margin-top: 10px; }
-.index-com .bottom-bk .list a { display: block; color: #fff; font: 12px/3 "宋体"; }
+.index-com .bottom-bk .list a { color: #fff; font: 12px/3 "宋体"; }
 .index-com .bottom-bk .list a .rank { width: 27px; height: 27px; margin-bottom: 4px; color: #fff; font: 18px/1.5 Arial; text-align: center; margin-right: 10px; display: inline-block; vertical-align: middle; background: url(../images/index/com-rank.png) right center; }
 .index-com .bottom-bk .list a .top3 { background-position: left center; }
 

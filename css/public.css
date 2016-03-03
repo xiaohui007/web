@@ -53,7 +53,11 @@ a { display: inline-block; text-decoration: none; outline: none; }
 .xq-header .car-menu .menu a.cur,.xq-header .car-menu .menu a:hover { color: #fff; background: #0067b2; }
 .xq-header .car-menu .menu a.cur span.arrow { display: block; }
 
-.xq-header .financial { width: 623px; height: 345px; position: absolute; top: 107px; left: 50%; margin-left: 200px; }
+.xq-header .financial { width: 623px; height: 345px; border-top: 1px solid rgba(155, 155, 158, 0); background: #fff; position: fixed; top: 108px; left: 50%; margin-left: -40px; z-index: 111; }
+.xq-header .financial .fl { width: 122px; height: 325px; padding-top: 20px; background: url(../images/header-financial.png) no-repeat center 250px; position: relative; }
+.xq-header .financial .fl a { width: 122px; color: #808080; font: 14px/1 "宋体"; margin: 10px 0; text-align: center; }
+.xq-header .financial .fl a span { visibility: hidden; }
+.xq-header .financial .fl a.cur span,.xq-header .financial .fl a:hover span { visibility: inherit; }
 
 /*-- css-footer --*/
 .xq-footer { width: 100%; max-width: 1920px; margin: 0 auto; height: 448px; border-top: #0067b2 3px solid; overflow: hidden; }
@@ -105,10 +109,21 @@ a { display: inline-block; text-decoration: none; outline: none; }
 .scrollbar .a7 { background-position: left -372px; }
 
 /*-- css-pages --*/
-.page-banner { width: 100%; max-width: 1920px; margin: 0 auto; height: 433px; overflow: hidden; position: relative; }
+.page-banner { width: 100%; max-width: 1920px; margin: 0 auto; height: 432px; overflow: hidden; position: relative; }
+
 .page-menu { width: 100%; max-width: 1920px; margin: 0 auto; height: 45px; background: #f0f0f0; border-bottom: 1px solid #c6c6c6; overflow: hidden; position: relative; }
-.page-menu .financial a { width: 16.66%; color: #585858; font: 14px/45px "宋体"; text-align: center; float: left; }
-.page-menu .financial a.cur,.page-menu .financial a:hover { color: #fff; background: #0067b2; }
+/*.page-menu>.w1200>div { padding: 0 10px; }*/
+.page-menu a { width: 16.66%; color: #585858; font: 14px/45px "宋体"; text-align: center; float: left; }
+.page-menu a.cur,.page-menu a:hover { color: #fff; background: #0067b2; }
+.page-menu .car a { width: 14.28%; }
+.page-menu .financial a { width: 16.66%; }
+.page-menu .owner a { width: 11.11%; }
+
+.car-banner { width: 100%; max-width: 1920px; margin: 0 auto; height: 421px; overflow: hidden; position: relative; }
+.car-banner .link a { float: left; }
+.car-banner .link .bbs { width: 139px; height: 26px; background: #0067b2; color: #fff; font: 14px/26px "宋体"; text-align: center; margin-right: 5px; }
+.car-banner .link .share { width: 29px; height: 26px; background: url(../images/car/banner-ico.png) no-repeat left center; margin-right: 2px; }
+.car-banner .link .good { width: 29px; height: 26px; background: url(../images/car/banner-ico.png) no-repeat right center; }
 
 /*-- css-swiper --*/
 .swiper-container { width: 100%; height: 100%; position: relative; }
@@ -120,5 +135,5 @@ a { display: inline-block; text-decoration: none; outline: none; }
 .banner-pagination .swiper-pagination-switch { width: 25px; height: 5px; background: none; border: 1px solid #e1e0e0; -webkit-border-radius: 0; border-radius: 0; opacity: 1; }
 .banner-pagination .swiper-active-switch { background: #fff; }
 
-.page-banner .banner-swiper { width: 1920px; height: 433px; position: absolute; top: 0; left: 50%; margin-left: -960px; overflow: hidden; }
+.page-banner .banner-swiper { width: 1920px; height: 432px; position: absolute; top: 0; left: 50%; margin-left: -960px; overflow: hidden; }
 .page-banner .banner-pagination { top: 400px; *left: 0; }
