@@ -3,7 +3,8 @@ $(document).ready(function() {
   $('#loading').fadeOut();
 
   $("img.imglazy").lazyload({
-    effect : "fadeIn"
+    effect : "fadeIn",
+    threshold : 400
   });
 
   $('.index-hot .arrow').on('click', 'a', function(event) {
@@ -33,7 +34,7 @@ $(document).ready(function() {
       dataType: 'html',
       async: true,
       success: function(data){
-        console.log(_obj);
+        // console.log(_obj);
         _obj.empty().append(data);
         _this.addClass('cur').siblings().removeClass('cur');
         // _loading.remove();
@@ -60,7 +61,6 @@ $(document).ready(function() {
       dataType: 'html',
       async: true,
       success: function(data){
-        console.log(233);
         _obj.empty().append(data);
         _this.addClass('cur').siblings().removeClass('cur');
         // _loading.remove();

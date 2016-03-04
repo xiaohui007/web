@@ -5,7 +5,7 @@
 </style>
 
 <!-- start content -->
-<div class="car-banner" style="background: url(images/car/banner.jpg);">
+<div class="car-banner page-banner" style="background: url(images/car/banner.jpg) center;">
   <div class="w1200">
     <div class="link clearfix">
       <a href="#" class="bbs">车型论坛　　></a>

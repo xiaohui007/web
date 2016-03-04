@@ -1,0 +1,93 @@
+/*-- css-car --*/
+.car-overview { width: 100%; border-bottom: 1px solid #b9b9b9; max-width: 1920px; margin: 0 auto; position: relative; z-index: 1; }
+.car-overview h2 { color: #0067b2; font: 30px/1 "微软雅黑"; text-align: center; padding: 40px 0; }
+.car-overview .menu { display: block; text-align: center; margin-bottom: 40px; }
+.car-overview .menu a { padding-top: 60px; margin: 0 30px; color: #262626; font: 14px/1 "宋体"; background: url(../images/car/overview-ico.png) no-repeat center; }
+.car-overview .menu a.cur { color: #0067b2; }
+.car-overview .menu a:hover { color: #0067b2; }
+.car-overview .menu .a1 { background-position: 3px 5px; }
+.car-overview .menu .a2 { background-position: center 5px; }
+.car-overview .menu .a3 { background-position: -317px 5px; }
+.car-overview .menu .a1.cur,.car-overview .menu .a1:hover { background-position: 3px -64px; }
+.car-overview .menu .a2.cur,.car-overview .menu .a2:hover { background-position: center -64px; }
+.car-overview .menu .a3.cur,.car-overview .menu .a3:hover { background-position: -317px -64px; }
+.car-overview .content {  }
+.car-overview .config .img { display: block; text-align: center; }
+.car-overview .config .inf { margin: 10px 0 120px; padding: 0 136px; }
+.car-overview .config .inf .fl { width: 210px; padding: 0 5px 0 15px; border-left: 1px dotted #5f5f5f; }
+.car-overview .config .inf .fl.lastfix { border-right: 1px dotted #5f5f5f; }
+.car-overview .config .inf .fl.centerfix { width: 150px; padding: 0 40px; }
+.car-overview .config .inf h3 { color: #0067b2; font: 36px/1.6 "微软雅黑"; }
+.car-overview .config .inf h4 { color: #0067b2; font: 16px/1 "宋体"; padding-bottom: 15px; }
+.car-overview .config .inf p { color: #585858; font: 12px/1.5 "宋体"; padding-bottom: 10px; }
+.car-overview .config .inf a { text-align: center; margin: 12px 56px; color: #585858; font: 14px/2 "宋体"; }
+.car-overview .btn { display: block; text-align: center; position: relative; bottom: -17px; }
+.car-overview .btn a { width: 185px; height: 34px; background: #0067b2; text-align: center; color: #fff; font: 14px/34px "宋体";  }
+
+.car-pv { width: 100%; max-width: 1920px; margin: 0 auto;/* height: 1224px;*/ background: url(../images/car/pv-bg_panda2015.jpg) no-repeat center bottom; overflow: hidden; }
+.car-pv h2 { color: #bababa; font: 30px/1 "微软雅黑"; text-align: center; padding: 125px 0 45px; }
+.car-pv h2 a { color: #bababa; font: 30px/1 "微软雅黑"; }
+.car-pv h2 a.cur { color: #0067b2;  }
+.car-pv .video { width: 100%; min-width: 1200px; padding-bottom: 240px; position: relative; }
+.car-pv .video a { float: left; position: relative; }
+.car-pv .video a .ico { width: 38px; height: 38px; display: inline-block; background: url(../images/car/pv-ico.png); position: absolute; top: 20px; left: 20px; }
+
+.car-app { width: 100%; max-width: 1920px; height: 858px; margin: 0 auto; background: url(../images/car/app-bg_panda2015.jpg) no-repeat center; overflow: hidden; }
+.car-app h2 { color: #0067b2; font: 30px/1 "微软雅黑"; text-align: center; padding: 25px 0; }
+.car-app .car { width: 1200px; height: 621px; position: relative; background: url(../images/car/app_panda2015.png) no-repeat center; margin-top: 135px; }
+
+.car-pp { width: 100%; max-width: 1920px; margin: 0 auto; height: 950px; background: url(../images/car/pp-bg_panda2015.jpg) no-repeat center; overflow: hidden; }
+.car-pp h2 { color: #0067b2; font: 30px/1 "微软雅黑"; text-align: center; padding: 150px 0 40px; }
+.car-pp .menu { display: block; text-align: center; margin-bottom: 20px; }
+.car-pp .menu a { margin: 0 50px; padding: 60px 14px 0; color: #262626; font: 14px/1 "宋体"; background: url(../images/index/pp-ico.png) no-repeat center; }
+.car-pp .menu a.cur { color: #0067b2; }
+.car-pp .menu a:hover { color: #0067b2; }
+.car-pp .menu .a1 { background-position: -52px 4px; }
+.car-pp .menu .a2 { background-position: -212px 4px; }
+.car-pp .menu .a3 { background-position: -371px 4px; }
+.car-pp .menu .a4 { background-position: -532px 4px; }
+.car-pp .menu .a1.cur,.car-pp .menu .a1:hover { background-position: -52px -67px; }
+.car-pp .menu .a2.cur,.car-pp .menu .a2:hover { background-position: -212px -67px; }
+.car-pp .menu .a3.cur,.car-pp .menu .a3:hover { background-position: -371px -67px; }
+.car-pp .menu .a4.cur,.car-pp .menu .a4:hover { background-position: -532px -67px; }
+.car-pp .content { width: 100%; height: 630px; overflow: hidden; margin-bottom: 50px; position: relative; }
+.car-pp .content>div { width: 570px; height: 100%; }
+.car-pp .content .left-bk>div { width: 270px; }
+.car-pp .content .block .cl { width: 35px; height: 35px; position: absolute; top: 10px; left: 10px; background: url(../images/index/pp-cl.png) top left; }
+.car-pp .content .block .cl1 { background-position: top left; }
+.car-pp .content .block .cl2 { background-position: center left; }
+.car-pp .content .block .cl3 { background-position: bottom left; }
+.car-pp .content .comef { position: absolute; bottom: 0; left: 0; }
+.car-pp .content .hide { width: 100%; height: 100%; background: rgba(0, 0, 0, .7); position: absolute; top: 0; left: 0; display: none; }
+.car-pp .content .block:hover .hide { display: block; }
+.car-pp .content .hide p { color: #fff; font: 12px/1.5 "微软雅黑"; padding: 15px; }
+.car-pp .content .function { width: 268px; height: 55px; position: absolute; bottom: 0; left: 0; background: #fff; border: 1px solid #a8a6a7; }
+.car-pp .content .function.wfix { width: 568px; }
+.car-pp .content .function .good { height: 55px; color: #5e5e5e; font: 12px/55px "微软雅黑"; margin-right: 15px; padding-left: 40px; background: url(../images/index/function-ico.png) no-repeat -61px center; }
+.car-pp .content .function .share { width: 31px; height: 55px;margin-right: 5px; background: url(../images/index/function-ico.png) no-repeat left center; }
+.car-pp .left-bk { margin-left: 10px; }
+.car-pp .left-bk .bk1 { width: 270px; height: 270px; position: relative; overflow: hidden; }
+.car-pp .left-bk .bk2 { width: 270px; height: 133px; position: relative; overflow: hidden; margin-top: 30px; }
+.car-pp .left-bk .fr.block { width: 270px; height: 434px; position: relative; overflow: hidden; }
+.car-pp .left-bk>div.bottom { width: 570px; height: 165px; position: relative; overflow: hidden; margin-top: 30px; }
+.car-pp .right-bk { margin-right: 10px; }
+.car-pp .right-bk .top { width: 570px; height: 270px; position: relative; overflow: hidden; }
+.car-pp .right-bk .bottom { margin-top: 20px; }
+.car-pp .right-bk .bottom a { display: block; color: #464646; font: 12px/3 "微软雅黑"; border-bottom: 1px solid #ededed; }
+.car-pp .right-bk .bottom a .cl { width: 27px; height: 27px; margin-bottom: 4px; margin-right: 20px; display: inline-block; vertical-align: middle; background: url(../images/index/pp-cl.png) -39px -4px; }
+.car-pp .right-bk .bottom a .cl1 { background-position: -39px -4px; }
+.car-pp .right-bk .bottom a .cl2 { background-position: -39px -39px; }
+.car-pp .right-bk .bottom a .cl3 { background-position: -39px -74px; }
+
+.car-config { width: 100%; max-width: 1920px; margin: 0 auto; overflow: hidden; }
+.car-config h2 { color: #0067b2; font: 30px/1 "微软雅黑"; text-align: center; padding: 80px 0 50px; }
+.car-config .wrapper { padding: 0 10px 150px; }
+.car-config .wrapper table { width: 100%; display: none; }
+.car-config .wrapper table.title { display: table; }
+.car-config .wrapper table td { height: 40px; background: #f1f1f1; border: 1px solid #dbdbdb; text-align: center; vertical-align: middle; color: #777777; font: 12px/1.5 "宋体"; }
+.car-config .wrapper .title td { background: #e6e6e6; }
+.car-config .wrapper td.th { text-align: center; text-indent: 3em; }
+.car-config .wrapper .c_btn { display: block; height: 42px; border: 1px solid #dbdbdb; border-top: none; background: #e6e6e6; color: #777777; font: bold 14px/3 "宋体"; text-indent: 3em; position: relative; }
+.car-config .wrapper .c_btn .ico { width: 23px; height: 23px; display: inline-block; background: url(../images/car/config-ico.png) no-repeat center bottom; position: absolute; top: 10px; right: 33px; }
+.car-config .wrapper .c_btn.cur,.car-config .wrapper .c_btn:hover { color: #fff; font-style: normal; background: #0067b2; }
+.car-config .wrapper .c_btn.cur .ico,.car-config .wrapper .c_btn:hover .ico { background-position: center top;  }
