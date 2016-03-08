@@ -6,6 +6,8 @@
 .yellow {color:#fff600;}
 .red {color:#ff0000;}
 
+.tw915 {width:915px;}
+
 .tc {text-align:center;}
 
 .f-song {font-family:"宋体",Arial;}
@@ -15,21 +17,31 @@
 .f14 {font-size:14px;}
 .f16 {font-size:16px;}
 .f18 {font-size:18px;}
+.f30 {font-size:30px;}
 .f38 {font-size:38px;}
 
 .ml14 {margin-left:14px;}
 .ml15 {margin-left:15px;}
+.ml20 {margin-left:20px}
 .ml30 {margin-left:30px;}
 
 .mr20 {margin-right:20px;}
+.mr45 {margin-right:45px;}
 
+.mt15 {margin-top:15px}
 .mt30 {margin-top:30px}
+.mt60 {margin-top:60px}
 
 .mb8 {margin-bottom:8px}
+.mb15 {margin-bottom:15px}
 .mb16 {margin-bottom:16px}
+.mb25 {margin-bottom:25px}
+.mb30 {margin-bottom:30px}
+.mb40 {margin-bottom:40px}
 .mb80 {margin-bottom:80px}
 
 .lh25 {line-height:25px;}
+.lh30 {line-height:30px;}
 /*END 公用代码*/
 
 .wrapper {font-family:"微软雅黑","Microsoft YaHei",Arial,"Microsoft JhengHei";}
